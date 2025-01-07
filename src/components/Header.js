@@ -1,11 +1,11 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-const Header = () => {
+const Header = ({title}) => {
   const {textStyling, viewStyle} = styles;
   return (
     <View style={viewStyle}>
-      <Text style={textStyling}>Cars</Text>
+      <Text style={textStyling}>{title}</Text>
     </View>
   );
 };
@@ -15,7 +15,11 @@ const styles = {
     fontSize: 22,
   },
   viewStyle: {
-    backgroundColor: 'grey',
+    backgroundColor: 'gainsboro',
+    height: 70,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: 25,
   },
 };
 
