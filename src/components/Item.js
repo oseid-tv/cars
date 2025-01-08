@@ -1,14 +1,15 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const Item = () => {
-  return <View styles={styles.viewStyle} />;
+const Item = props => {
+  return <View styles={styles.viewStyle}>{props.children}</View>;
 };
 
 const styles = {
   viewStyle: {
     borderWidth: 1,
     borderColor: 'gainsboro',
+    borderBottomWidth: 0,
     shadowColor: 'black',
     shadowOffset: {width: 1, height: 1},
     opacity: 0.1,
