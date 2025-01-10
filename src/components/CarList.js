@@ -24,7 +24,7 @@ class CarList extends Component {
 
   render() {
     console.log(this.state);
-    return <View>{this.renderList()}</View>;
+    return <ScrollView>{this.renderList()}</ScrollView>;
   }
 }
 
